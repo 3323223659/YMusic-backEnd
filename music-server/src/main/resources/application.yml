@@ -1,0 +1,46 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: dev
+  main:
+    allow-circular-references: true
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/music_project?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+      username: root
+      password: 1234
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  servlet:
+    multipart:
+      max-file-size: 30MB
+      max-request-size: 30MB
+#    自己的redis服务
+  redis:
+    host: localhost
+    port: 6379
+    password:
+    database: 1
+
+music:
+  jwt:
+    # 设置jwt签名加密时使用的秘钥
+    admin-secret-key: adminMusic
+    # 设置jwt过期时间
+    admin-ttl: 7200000
+    # 设置前端传递过来的令牌名称
+    admin-token-name: token
+    user-secret-key: userMusic
+    user-ttl: 7200000
+    user-token-name: authorization
+  alioss:
+    #阿里云OSS配置
+    endpoint: oss-cn-guangzhou.aliyuncs.com
+    access-key-id: #自行申请
+    access-key-secret: #自行申请
+    audio-bucket-name: ymusic-audio
+    image-bucket-name: ymusic-image
