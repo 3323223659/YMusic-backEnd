@@ -34,6 +34,7 @@ pull该项目
 ### 使用说明
 
 ```HTML
+前端代码地址：https://github.com/3323223659/YMusic-frontEnd
 阿里云oss密钥自己申请进行替换
 注意redis要启动，端口什么的配置文件自行配置
 启动后的api文档（swagger）：http://localhost:8080/doc.html#/home
