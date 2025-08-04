@@ -4,6 +4,8 @@
 
 本项目是基于 Spring Boot 框架开发的音乐平台系统，采用前后端分离架构。项目实现了完整的音乐平台功能，包括用户管理、音乐播放、歌单管理、歌手信息等模块，支持管理端和用户端双端操作，适合学习和二次开发。
 
+前端地址：https://github.com/3323223659/YMusic-frontEnd
+
 ## 技术架构
 
 - **后端框架**：Spring Boot 2.7.3
@@ -143,7 +145,6 @@ docker-compose ps
 
 - 应用服务：http://localhost:8080
 - API 文档：http://localhost:8080/doc.html
-- 前端页面：http://localhost:9091（需配置 Nginx）
 
 ### 6. 默认账户
 
@@ -211,3 +212,4 @@ docker-compose ps
 ## 免责声明
 
 本项目仅用于学习和交流，禁止用于商业用途。如有侵权请联系删除。
+
